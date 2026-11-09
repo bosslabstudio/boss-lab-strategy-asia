@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boss Lab กับเซสชันสั้น — ออโต้แบทเทิลและ Arena อะซิงโครนัสบน Android</title>
+<meta name="description" content="เล่น Boss Lab แบบรอบสั้น: รูทีน 8–12 นาที, Arena อะซิงค์, ต้องมีเน็ต, 60+ ชิ้นส่วน.">
+<style>
+:root {
+  --bg:#f7f1e8; --card:#fffdf8; --text:#1f1a14; --muted:#6b5e4e;
+  --accent:#0d7a6f; --accent2:#c45c26; --line:#e2d6c4; --chip:#e8f4f2;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; font-family:"Noto Sans","Segoe UI",Roboto,system-ui,sans-serif;
+  background:
+    radial-gradient(ellipse at top left, #efe4d4 0%, transparent 55%),
+    linear-gradient(180deg, #f7f1e8 0%, #efe8dc 100%);
+  color:var(--text); line-height:1.75;
+}
+a { color:var(--accent); text-decoration-thickness:1px; }
+a:hover { color:var(--accent2); }
+header, main, footer { max-width:740px; margin:0 auto; padding:1.35rem 1.15rem; }
+header {
+  border-bottom:2px solid var(--line);
+  background:linear-gradient(90deg, rgba(13,122,111,.08), transparent);
+  border-radius:0 0 14px 14px;
+}
+header .brand {
+  display:inline-block; font-size:.78rem; letter-spacing:.04em; text-transform:uppercase;
+  background:var(--chip); color:var(--accent); padding:.2rem .55rem; border-radius:999px; margin-bottom:.55rem;
+}
+header h1 { font-size:1.42rem; margin:.2rem 0 .4rem; line-height:1.35; }
+header .lead { margin:0; color:var(--muted); font-size:.96rem; }
+.meta { color:var(--muted); font-size:.9rem; }
+article h2 {
+  font-size:1.12rem; margin-top:1.7rem; color:var(--accent);
+  border-bottom:1px dashed var(--line); padding-bottom:.25rem;
+}
+article h3 { font-size:1.02rem; margin-top:1.15rem; }
+ul, ol { padding-left:1.3rem; }
+.card {
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:1rem 1.15rem; margin:1rem 0;
+  box-shadow:0 1px 0 rgba(31,26,20,.04);
+}
+.callout {
+  border-left:4px solid var(--accent2); background:#fff7f0;
+  padding:.85rem 1rem; margin:1.1rem 0; border-radius:0 10px 10px 0;
+}
+.table-wrap { overflow-x:auto; margin:1rem 0; }
+table { width:100%; border-collapse:collapse; font-size:.95rem; background:var(--card); }
+th, td { border:1px solid var(--line); padding:.55rem .65rem; text-align:left; vertical-align:top; }
+th { background:var(--chip); color:var(--accent); }
+footer { border-top:2px solid var(--line); color:var(--muted); font-size:.9rem; margin-top:2rem; }
+nav ul { list-style:none; padding:0; }
+nav li {
+  margin:.6rem 0; padding:.85rem 1rem; background:var(--card);
+  border:1px solid var(--line); border-radius:10px;
+}
+.disclosure { font-size:.92rem; color:var(--muted); margin-top:1.5rem; }
+.links { margin:1.4rem 0; }
+</style>
+</head>
+<body>
+<header>
+<span class="brand">Boss Lab Studio · Netlify static guides</span>
+<h1>เล่น Boss Lab เป็นรอบสั้นได้จริงไหม?</h1>
+<p class="lead meta">Android · 60+ parts · async Arena PvP · free with IAP · connection required</p>
+</header>
+<main>
+<article>
+
+<p><strong>สรุปสั้น:</strong> Boss Lab ออกแบบมาให้เล่นเป็นรอบสั้นได้ เพราะการต่อสู้เป็นแบบออโต้ และ Arena เป็น PvP แบบอะซิงโครนัส — คุณไม่ต้องรอคู่ต่อสู้แบบเรียลไทม์ เกมนี้เป็น Android only จาก Boss Lab Studio (2026): ประกอบบอสจาก <strong>ชิ้นส่วน 60+</strong> เลือก AI brain หนึ่งในสาม ดูไซด์วิวอัตโนมัติ มีแคมเปญ 100 บอส / 20 เขต ต้องใช้การเชื่อมต่อ มีการซื้อในแอป ไม่ใช่เลเวลเอดิเตอร์ และไม่มีเครื่องมือ UGC</p>
+
+<p class="disclosure">บทความนี้เขียนโดยผู้พัฒนา Boss Lab Studio ศิลปะ/เสียงมี AI ช่วย ออกแบบ โค้ด และบาลานซ์ทำโดยทีม</p>
+
+<h2>ทำไมเซสชันสั้นถึงเข้ากันกับเกมนี้</h2>
+<ul>
+<li>คุณตัดสินใจก่อนไฟต์ (ชิ้นส่วน + brain) แล้วปล่อยให้แมตช์เล่นเอง</li>
+<li>Arena โพสต์บอสได้ แล้วไปทำอย่างอื่น กลับมาดูผลตั้งรับทีหลัง</li>
+<li>แคมเปญแยกเป็น “ดูรีเพลย์หนึ่งไฟต์ + เปลี่ยนหนึ่งสล็อต” ได้</li>
+</ul>
+
+<div class="callout">สำคัญ: เกมต้องการการเชื่อมต่อเครือข่าย อย่าคาดหวังว่าจะเล่นออฟไลน์ครบทุกโหมด</div>
+
+<div class="card">
+<h3>รูทีน 8–12 นาที</h3>
+<ol>
+<li>เปิดรีเพลย์ไฟต์ล่าสุดที่แพ้</li>
+<li>ถามว่าพลาดเพราะระยะอาวุธ หรือเพราะ brain พาเข้าโซนตาย</li>
+<li>เปลี่ยนแค่ brain หรืออาวุธหนึ่งชิ้น</li>
+<li>ลองใหม่หนึ่งครั้ง แล้วบันทึกผล</li>
+<li>(ทางเลือก) โพสต์บอสใน Arena แล้วจบเซสชัน</li>
+</ol>
+</div>
+
+<h2>เข้าถึงได้สำหรับคนที่ไม่อยากรีเฟล็กซ์</h2>
+<p>กลยุทธ์อยู่ที่การประกอบ ไม่ใช่การเล็งแบบชูตเตอร์เรียลไทม์ (ต่างจากแนว War Robots / Mech Arena) หากชอบแนวประกอบแล้วปล่อยให้สู้แบบ CATS / Robotics! / Super Mechs Boss Lab อยู่ในตระกูลเดียวกัน พร้อม brain presets และแคมเปญ 100 บอส</p>
+
+<h2>สาม brain สำหรับเซสชันทดลองเร็ว</h2>
+<ul>
+<li><strong>Hunter</strong> — ไล่ตาม</li>
+<li><strong>Counterstrike</strong> — ตอบโต้/รีแอค</li>
+<li><strong>Berserker</strong> — ยิ่งโดนดาเมจยิ่งดุ</li>
+</ul>
+<p>กฎทองของการทดลองสั้น: เปลี่ยนทีละแกน เพื่อไม่เสียเวลาไล่ตัวแปร</p>
+
+<h2>สิ่งที่ไม่ใช่จุดขายของ “เล่นสั้น”</h2>
+<ul>
+<li>ไม่ใช่เลเวลเอดิเตอร์ และไม่มี UGC ให้มาสร้างแมพ</li>
+<li>ไม่ใช่ iOS</li>
+<li>ไม่ใช่เกมที่อ้างว่าออฟไลน์สมบูรณ์</li>
+</ul>
+
+<ul>
+<li><a href="https://www.bosslab.xyz/blog/beginners-guide?utm_source=netlify&amp;utm_campaign=sprint_th-short-sessions">คู่มือมือใหม่</a></li>
+<li><a href="https://www.bosslab.xyz/blog/arena-guide?utm_source=netlify&amp;utm_campaign=sprint_th-short-sessions">Arena guide</a></li>
+<li><a href="https://www.bosslab.xyz/blog/campaign-vs-arena?utm_source=netlify&amp;utm_campaign=sprint_th-short-sessions">Campaign vs Arena</a></li>
+</ul>
+
+<p>เว็บไซต์: <a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_th-short-sessions">https://www.bosslab.xyz/</a> · Google Play: <a href="https://play.google.com/store/apps/details?id=com.bosslab.game&amp;utm_source=netlify&amp;utm_campaign=sprint_th-short-sessions">Boss Lab: Robot Battle Builder</a></p>
+
+
+<h2>แคมเปญ 100 บอสแบบหั่นเป็นชิ้น</h2>
+<p>20 เขตไม่จำเป็นต้องเคลียร์ยาวในครั้งเดียว เลือกบอสที่ติดไว้ เปิดรีเพลย์ แล้วถามว่าปัญหาอยู่ที่ระยะอาวุธ น้ำหนัก/การเคลื่อนที่ หรือจังหวะซัพพอร์ต การเปลี่ยนทีละสล็อตในชิ้นส่วน 60+ ช่วยให้เซสชันสั้นยังได้ข้อมูล อย่าสลับทั้งเครื่องพร้อมเปลี่ยน brain</p>
+<p>อ่านต่อ: <a href="https://www.bosslab.xyz/blog/campaign-guide?utm_source=netlify&amp;utm_campaign=sprint_th-short-sessions">campaign-guide</a> · <a href="https://www.bosslab.xyz/blog/stuck-on-boss?utm_source=netlify&amp;utm_campaign=sprint_th-short-sessions">stuck-on-boss</a> · <a href="https://www.bosslab.xyz/blog/brain-presets?utm_source=netlify&amp;utm_campaign=sprint_th-short-sessions">brain-presets</a></p>
+
+<h2>ความซื่อสัตย์เรื่อง IAP และการเชื่อมต่อ</h2>
+<p>ดาวน์โหลดฟรี มีการซื้อในแอป — เราไม่ยืนยันว่า “ไม่จ่ายก็เท่าคนจ่ายทุกมิติ” หรือ “ต้องจ่ายถึงจะผ่าน” ให้ดูรีวิว Play ล่าสุดเอง เกมต้องการเน็ต; Arena อะซิงค์ช่วยเรื่องเซสชันสั้น แต่ไม่ได้แปลว่าออฟไลน์ได้ทั้งหมด</p>
+
+<p class="disclosure">เปิดเผยผู้พัฒนา: Boss Lab Studio · AI-assisted art/audio · ทีมทำดีไซน์/โค้ด/บาลานซ์ · Android only · 60+ parts · IAP · ต้องมีเน็ต · ไม่ใช่ level editor · ไม่มี UGC</p>
+
+<p class="links">
+<a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_th-short-sessions">bosslab.xyz</a>
+·
+<a href="https://play.google.com/store/apps/details?id=com.bosslab.game&amp;utm_source=netlify&amp;utm_campaign=sprint_th-short-sessions">Google Play — Boss Lab: Robot Battle Builder</a>
+</p>
+</article>
+</main>
+<footer>
+<p>© 2026 Boss Lab Studio · <a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_th-short-sessions">Official site</a></p>
+</footer>
+</body>
+</html>

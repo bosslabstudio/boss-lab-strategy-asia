@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kesalahan umum AI brain Boss Lab — Hunter, Counterstrike, Berserker</title>
+<meta name="description" content="Troubleshooting preset AI brain Boss Lab: kesalahan umum dan checklist replay 10 menit.">
+<style>
+:root {
+  --bg:#f7f1e8; --card:#fffdf8; --text:#1f1a14; --muted:#6b5e4e;
+  --accent:#0d7a6f; --accent2:#c45c26; --line:#e2d6c4; --chip:#e8f4f2;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; font-family:"Noto Sans","Segoe UI",Roboto,system-ui,sans-serif;
+  background:
+    radial-gradient(ellipse at top left, #efe4d4 0%, transparent 55%),
+    linear-gradient(180deg, #f7f1e8 0%, #efe8dc 100%);
+  color:var(--text); line-height:1.75;
+}
+a { color:var(--accent); text-decoration-thickness:1px; }
+a:hover { color:var(--accent2); }
+header, main, footer { max-width:740px; margin:0 auto; padding:1.35rem 1.15rem; }
+header {
+  border-bottom:2px solid var(--line);
+  background:linear-gradient(90deg, rgba(13,122,111,.08), transparent);
+  border-radius:0 0 14px 14px;
+}
+header .brand {
+  display:inline-block; font-size:.78rem; letter-spacing:.04em; text-transform:uppercase;
+  background:var(--chip); color:var(--accent); padding:.2rem .55rem; border-radius:999px; margin-bottom:.55rem;
+}
+header h1 { font-size:1.42rem; margin:.2rem 0 .4rem; line-height:1.35; }
+header .lead { margin:0; color:var(--muted); font-size:.96rem; }
+.meta { color:var(--muted); font-size:.9rem; }
+article h2 {
+  font-size:1.12rem; margin-top:1.7rem; color:var(--accent);
+  border-bottom:1px dashed var(--line); padding-bottom:.25rem;
+}
+article h3 { font-size:1.02rem; margin-top:1.15rem; }
+ul, ol { padding-left:1.3rem; }
+.card {
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:1rem 1.15rem; margin:1rem 0;
+  box-shadow:0 1px 0 rgba(31,26,20,.04);
+}
+.callout {
+  border-left:4px solid var(--accent2); background:#fff7f0;
+  padding:.85rem 1rem; margin:1.1rem 0; border-radius:0 10px 10px 0;
+}
+.table-wrap { overflow-x:auto; margin:1rem 0; }
+table { width:100%; border-collapse:collapse; font-size:.95rem; background:var(--card); }
+th, td { border:1px solid var(--line); padding:.55rem .65rem; text-align:left; vertical-align:top; }
+th { background:var(--chip); color:var(--accent); }
+footer { border-top:2px solid var(--line); color:var(--muted); font-size:.9rem; margin-top:2rem; }
+nav ul { list-style:none; padding:0; }
+nav li {
+  margin:.6rem 0; padding:.85rem 1rem; background:var(--card);
+  border:1px solid var(--line); border-radius:10px;
+}
+.disclosure { font-size:.92rem; color:var(--muted); margin-top:1.5rem; }
+.links { margin:1.4rem 0; }
+</style>
+</head>
+<body>
+<header>
+<span class="brand">Boss Lab Studio · Netlify static guides</span>
+<h1>AI brain sering salah pakai: panduan perbaikan cepat</h1>
+<p class="lead meta">Android · 60+ parts · async Arena PvP · free with IAP · connection required</p>
+</header>
+<main>
+<article>
+
+<p><strong>Jawaban singkat:</strong> Banyak kekalahan di Boss Lab bukan karena “kurang damage”, melainkan <strong>AI brain yang tidak cocok</strong> dengan kerangka build. Boss Lab adalah auto-battler Android dari Boss Lab Studio (2026): rakit boss dari <strong>60+ parts</strong>, pilih salah satu dari tiga brain (Hunter, Counterstrike, Berserker), lalu tonton duel sisi otomatis. Kampanye 100 boss / 20 distrik + Arena PvP asinkron. Perlu koneksi, gratis dengan IAP, bukan level editor, tanpa alat UGC.</p>
+
+<p class="disclosure">Artikel ini ditulis pengembang Boss Lab Studio. Art/audio dibantu AI; desain, kode, dan balancing dikerjakan tim.</p>
+
+<h2>Tiga brain — ingat fungsi kanoniknya</h2>
+<ul>
+<li><strong>Hunter</strong> — mengejar.</li>
+<li><strong>Counterstrike</strong> — bereaksi / counter.</li>
+<li><strong>Berserker</strong> — semakin agresif saat menerima damage.</li>
+</ul>
+
+<div class="card">
+<h3>Kesalahan umum #1: Melee + Hunter tanpa rencana keluar</h3>
+<p>Hunter mengejar. Itu bagus jika senjata Anda butuh jarak dekat — dan buruk jika replay menunjukkan Anda masuk ke zona mati lawan. Coba Counterstrike pada kerangka yang sama sebelum meng-upgrade semua senjata.</p>
+</div>
+
+<div class="card">
+<h3>Kesalahan umum #2: Kite ranged + Berserker tanpa tankiness awal</h3>
+<p>Berserker memuncak saat terluka. Build rapuh yang mengandalkan jarak jauh bisa runtuh sebelum “marah”-nya terasa. Pastikan support/mobility memberi waktu.</p>
+</div>
+
+<div class="card">
+<h3>Kesalahan umum #3: Ganti 5 parts sekaligus + ganti brain</h3>
+<p>Anda tidak akan tahu variabel mana yang memperbaiki situasi. Ubah satu sumbu dulu: brain saja, atau satu slot senjata saja, lalu lihat replay.</p>
+</div>
+
+<div class="callout">Panduan resmi: <a href="https://www.bosslab.xyz/blog/brain-presets?utm_source=netlify&amp;utm_campaign=sprint_id-brain-mistakes">brain-presets</a>. Brain di sini adalah preset perilaku — bukan “AI generatif menulis strategi” di tengah pertandingan.</div>
+
+<h2>Checklist troubleshooting 10 menit</h2>
+<ol>
+<li>Putar replay kekalahan terakhir.</li>
+<li>Catat: apakah Anda tidak mengenai target, atau terkena balasan lebih dulu?</li>
+<li>Samakan band jarak senjata dengan perilaku brain.</li>
+<li>Cek berat vs mobilitas — overweight sering terlihat seperti “AI bodoh” padahal Anda diam.</li>
+<li>Uji brain alternatif tanpa mengubah kerangka.</li>
+</ol>
+
+<h2>Kampanye vs Arena</h2>
+<p>Di kampanye, brain bisa dikhususkan untuk pola boss tertentu. Di Arena asinkron, boss terbit Anda menghadapi lawan yang tidak Anda pilih. Defense sering lebih suka kerangka generik + Counterstrike, tetapi itu bukan dogma — validasi lewat hasil defense dan replay. Baca juga <a href="https://www.bosslab.xyz/blog/arena-guide?utm_source=netlify&amp;utm_campaign=sprint_id-brain-mistakes">arena-guide</a>.</p>
+
+<h2>Bukan editor, bukan offline total</h2>
+<p>Anda merakit boss, bukan level. Tidak ada toolbox UGC. Game membutuhkan koneksi; jangan mengklaim bisa bermain offline penuh.</p>
+
+<ul>
+<li><a href="https://www.bosslab.xyz/blog/stuck-on-boss?utm_source=netlify&amp;utm_campaign=sprint_id-brain-mistakes">Stuck on boss</a></li>
+<li><a href="https://www.bosslab.xyz/blog/synergy-guide?utm_source=netlify&amp;utm_campaign=sprint_id-brain-mistakes">Synergy guide</a></li>
+<li><a href="https://www.bosslab.xyz/blog/replay-guide?utm_source=netlify&amp;utm_campaign=sprint_id-brain-mistakes">Replay guide</a></li>
+</ul>
+
+<p>Situs: <a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_id-brain-mistakes">https://www.bosslab.xyz/</a> · Play: <a href="https://play.google.com/store/apps/details?id=com.bosslab.game&amp;utm_source=netlify&amp;utm_campaign=sprint_id-brain-mistakes">Boss Lab: Robot Battle Builder</a></p>
+
+
+<h2>Kesalahan umum #4: Mengabaikan kategori part saat menyalahkan brain</h2>
+<p>60+ parts tersebar di body, weapon, mobility, dan support. Jika replay menunjukkan Anda hampir tidak bergerak, masalahnya mungkin overweight — bukan “Hunter bodoh”. Jika senjata kosong terlalu lama, cek ritme energy/heat sebelum ganti brain lagi. Bacaan: <a href="https://www.bosslab.xyz/blog/weight-and-mobility?utm_source=netlify&amp;utm_campaign=sprint_id-brain-mistakes">weight-and-mobility</a>, <a href="https://www.bosslab.xyz/blog/energy-and-heat?utm_source=netlify&amp;utm_campaign=sprint_id-brain-mistakes">energy-and-heat</a>.</p>
+
+<h2>Kesalahan umum #5: Ekspektasi offline dan iOS</h2>
+<p>Boss Lab hanya Android. Membutuhkan koneksi. Jangan mengikuti artikel yang menjanjikan offline penuh atau versi iPhone. Free-to-play dengan IAP — nilai monetisasi Anda nilai sendiri lewat ulasan Play terbaru, tanpa klaim absolut dari kami.</p>
+
+<p class="disclosure">Pengungkapan pengembang: Boss Lab Studio. Art/audio AI-assisted; desain/kode/balancing oleh tim. Android only · 60+ parts · IAP · perlu koneksi · bukan level editor · tanpa UGC.</p>
+
+<p class="links">
+<a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_id-brain-mistakes">bosslab.xyz</a>
+·
+<a href="https://play.google.com/store/apps/details?id=com.bosslab.game&amp;utm_source=netlify&amp;utm_campaign=sprint_id-brain-mistakes">Google Play — Boss Lab: Robot Battle Builder</a>
+</p>
+</article>
+</main>
+<footer>
+<p>© 2026 Boss Lab Studio · <a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_id-brain-mistakes">Official site</a></p>
+</footer>
+</body>
+</html>

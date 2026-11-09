@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chơi Boss Lab theo hướng F2P: ưu tiên build & brain, nói thẳng về IAP</title>
+<meta name="description" content="Tiến triển Boss Lab khi ngân sách thấp: unlock parts, replay, brain. Free + IAP, cần mạng.">
+<style>
+:root {
+  --bg:#f7f1e8; --card:#fffdf8; --text:#1f1a14; --muted:#6b5e4e;
+  --accent:#0d7a6f; --accent2:#c45c26; --line:#e2d6c4; --chip:#e8f4f2;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; font-family:"Noto Sans","Segoe UI",Roboto,system-ui,sans-serif;
+  background:
+    radial-gradient(ellipse at top left, #efe4d4 0%, transparent 55%),
+    linear-gradient(180deg, #f7f1e8 0%, #efe8dc 100%);
+  color:var(--text); line-height:1.75;
+}
+a { color:var(--accent); text-decoration-thickness:1px; }
+a:hover { color:var(--accent2); }
+header, main, footer { max-width:740px; margin:0 auto; padding:1.35rem 1.15rem; }
+header {
+  border-bottom:2px solid var(--line);
+  background:linear-gradient(90deg, rgba(13,122,111,.08), transparent);
+  border-radius:0 0 14px 14px;
+}
+header .brand {
+  display:inline-block; font-size:.78rem; letter-spacing:.04em; text-transform:uppercase;
+  background:var(--chip); color:var(--accent); padding:.2rem .55rem; border-radius:999px; margin-bottom:.55rem;
+}
+header h1 { font-size:1.42rem; margin:.2rem 0 .4rem; line-height:1.35; }
+header .lead { margin:0; color:var(--muted); font-size:.96rem; }
+.meta { color:var(--muted); font-size:.9rem; }
+article h2 {
+  font-size:1.12rem; margin-top:1.7rem; color:var(--accent);
+  border-bottom:1px dashed var(--line); padding-bottom:.25rem;
+}
+article h3 { font-size:1.02rem; margin-top:1.15rem; }
+ul, ol { padding-left:1.3rem; }
+.card {
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:1rem 1.15rem; margin:1rem 0;
+  box-shadow:0 1px 0 rgba(31,26,20,.04);
+}
+.callout {
+  border-left:4px solid var(--accent2); background:#fff7f0;
+  padding:.85rem 1rem; margin:1.1rem 0; border-radius:0 10px 10px 0;
+}
+.table-wrap { overflow-x:auto; margin:1rem 0; }
+table { width:100%; border-collapse:collapse; font-size:.95rem; background:var(--card); }
+th, td { border:1px solid var(--line); padding:.55rem .65rem; text-align:left; vertical-align:top; }
+th { background:var(--chip); color:var(--accent); }
+footer { border-top:2px solid var(--line); color:var(--muted); font-size:.9rem; margin-top:2rem; }
+nav ul { list-style:none; padding:0; }
+nav li {
+  margin:.6rem 0; padding:.85rem 1rem; background:var(--card);
+  border:1px solid var(--line); border-radius:10px;
+}
+.disclosure { font-size:.92rem; color:var(--muted); margin-top:1.5rem; }
+.links { margin:1.4rem 0; }
+</style>
+</head>
+<body>
+<header>
+<span class="brand">Boss Lab Studio · Netlify static guides</span>
+<h1>Tiến triển F2P trung thực trong Boss Lab (có IAP)</h1>
+<p class="lead meta">Android · 60+ parts · async Arena PvP · free with IAP · connection required</p>
+</header>
+<main>
+<article>
+
+<p><strong>Trả lời thẳng:</strong> Boss Lab tải miễn phí trên Google Play, có <strong>mua trong ứng dụng (IAP)</strong>, và tiến triển chiến dịch dựa trên lựa chọn build + AI brain hơn là “bấm nhanh hơn đối thủ”. Đây là auto-battler Android (2026) của Boss Lab Studio: lắp boss từ <strong>60+ linh kiện</strong>, 3 brain, chiến dịch 100 boss / 20 khu, Arena PvP bất đồng bộ. Cần kết nối mạng. Không phải level editor, không có công cụ UGC.</p>
+
+<p class="disclosure">Bài viết của nhà phát triển Boss Lab Studio. Art/audio có hỗ trợ AI; thiết kế, code và cân bằng do đội làm.</p>
+
+<div class="callout">Chúng tôi <em>không</em> khẳng định “F2P hoàn toàn bằng pay-to-win” hay “IAP chẳng ảnh hưởng gì”. Hãy đọc review Play gần đây và tự đánh giá. Dưới đây là cách chơi trung thực với ngân sách thấp.</div>
+
+<h2>Tiến triển F2P nên ưu tiên gì</h2>
+<ol>
+<li>Hiểu 4 nhóm linh kiện: thân, vũ khí, di chuyển, hỗ trợ — đừng chỉ nâng một súng.</li>
+<li>Thử đủ 3 brain trên cùng một khung: Hunter, Counterstrike, Berserker.</li>
+<li>Dùng replay khi thua 2–3 lần liên tiếp trước khi đốt tài nguyên nâng cấp.</li>
+<li>Mở khóa linh kiện theo chiến dịch thay vì mua mọi thứ ngay.</li>
+</ol>
+
+<div class="card">
+<h3>IAP trong Boss Lab nghĩa là gì với người chơi</h3>
+<p>Game free-to-play có IAP. Chiến dịch 100 boss được thiết kế quanh build và brain. Cảm giác “cần trả tiền đến đâu” khác nhau từng người — hãy tự kiểm chứng trên trang Play. Chúng tôi không đưa số liệu doanh thu hay lời hứa “không pay-to-win” tuyệt đối.</p>
+</div>
+
+<h2>Lịch session ngắn (có mạng)</h2>
+<p>Arena bất đồng bộ giúp bạn đăng boss, làm việc khác, rồi xem kết quả phòng thủ sau. Campaign cũng tách được thành nhiều lần chỉnh build 5–10 phút. Lưu ý: cần kết nối; đừng kỳ vọng offline toàn bộ.</p>
+
+<h2>Sai lầm tốn tài nguyên</h2>
+<ul>
+<li>Nâng cấp vũ khí sai band tầm khi replay cho thấy bạn đánh không trúng.</li>
+<li>Giữ nguyên brain dù build đã đổi từ cận chiến sang kite.</li>
+<li>Copy nguyên build “thắng 1 boss khó” sang Arena defense.</li>
+<li>Nhầm Boss Lab với editor map / UGC — bạn chỉ lắp boss.</li>
+</ul>
+
+<h2>So nhanh với nhánh build-then-fight</h2>
+<p>Nếu bạn thích kiểu CATS: Crash Arena Turbo Stars, Robotics! hay Super Mechs — lắp máy rồi xem đánh — Boss Lab cùng nhánh đó, thêm AI brain và chiến dịch 100 boss. Khác War Robots / Mech Arena (bắn thời gian thực). Không nêu thông số đối thủ ngoài các mô tả đã có trong tài liệu chính thức.</p>
+
+<ul>
+<li><a href="https://www.bosslab.xyz/blog/upgrade-priorities?utm_source=netlify&amp;utm_campaign=sprint_vi-f2p-progression">Upgrade priorities</a></li>
+<li><a href="https://www.bosslab.xyz/blog/unlock-parts?utm_source=netlify&amp;utm_campaign=sprint_vi-f2p-progression">Unlock parts</a></li>
+<li><a href="https://www.bosslab.xyz/blog/campaign-guide?utm_source=netlify&amp;utm_campaign=sprint_vi-f2p-progression">Campaign guide</a></li>
+</ul>
+
+<p>Site: <a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_vi-f2p-progression">https://www.bosslab.xyz/</a> · Play: <a href="https://play.google.com/store/apps/details?id=com.bosslab.game&amp;utm_source=netlify&amp;utm_campaign=sprint_vi-f2p-progression">Boss Lab: Robot Battle Builder</a></p>
+
+
+<h2>Khi nào nên đụng Mythic parts?</h2>
+<p>Mythic không phải nút “thắng ngay”. Nếu replay cho thấy sai band tầm hoặc brain đẩy bạn vào vùng chết, hãy sửa trục đó trước khi đốt tài nguyên vào bậc cao. Đọc <a href="https://www.bosslab.xyz/blog/mythic-parts?utm_source=netlify&amp;utm_campaign=sprint_vi-f2p-progression">mythic-parts</a> sau khi đã ổn định khung 60+ linh kiện cơ bản.</p>
+
+<h2>Campaign stars và nhịp ngắn</h2>
+<p>Chiến dịch 100 boss / 20 khu có thể chơi theo ngôi sao và mục tiêu phụ — phù hợp F2P muốn tiến đều. Xem <a href="https://www.bosslab.xyz/blog/campaign-stars?utm_source=netlify&amp;utm_campaign=sprint_vi-f2p-progression">campaign-stars</a> và <a href="https://www.bosslab.xyz/blog/campaign-energy?utm_source=netlify&amp;utm_campaign=sprint_vi-f2p-progression">campaign-energy</a>. Nhớ: cần mạng; không phải level editor; không UGC.</p>
+
+<p class="disclosure">Developer disclosure: Boss Lab Studio. AI-assisted art/audio; team design/code/balancing. Android only · 60+ parts · IAP · needs connection · not a level editor · no UGC.</p>
+
+<p class="links">
+<a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_vi-f2p-progression">bosslab.xyz</a>
+·
+<a href="https://play.google.com/store/apps/details?id=com.bosslab.game&amp;utm_source=netlify&amp;utm_campaign=sprint_vi-f2p-progression">Google Play — Boss Lab: Robot Battle Builder</a>
+</p>
+</article>
+</main>
+<footer>
+<p>© 2026 Boss Lab Studio · <a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_vi-f2p-progression">Official site</a></p>
+</footer>
+</body>
+</html>

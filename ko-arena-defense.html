@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boss Lab 아레나 방어 세팅 사고법 — 비동기 PvP 게시 전 체크리스트</title>
+<meta name="description" content="Boss Lab Arena 방어 빌드 사고방식: 브레인·사거리·리플레이 체크. 비동기 PvP.">
+<style>
+:root {
+  --bg:#f7f1e8; --card:#fffdf8; --text:#1f1a14; --muted:#6b5e4e;
+  --accent:#0d7a6f; --accent2:#c45c26; --line:#e2d6c4; --chip:#e8f4f2;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; font-family:"Noto Sans","Segoe UI",Roboto,system-ui,sans-serif;
+  background:
+    radial-gradient(ellipse at top left, #efe4d4 0%, transparent 55%),
+    linear-gradient(180deg, #f7f1e8 0%, #efe8dc 100%);
+  color:var(--text); line-height:1.75;
+}
+a { color:var(--accent); text-decoration-thickness:1px; }
+a:hover { color:var(--accent2); }
+header, main, footer { max-width:740px; margin:0 auto; padding:1.35rem 1.15rem; }
+header {
+  border-bottom:2px solid var(--line);
+  background:linear-gradient(90deg, rgba(13,122,111,.08), transparent);
+  border-radius:0 0 14px 14px;
+}
+header .brand {
+  display:inline-block; font-size:.78rem; letter-spacing:.04em; text-transform:uppercase;
+  background:var(--chip); color:var(--accent); padding:.2rem .55rem; border-radius:999px; margin-bottom:.55rem;
+}
+header h1 { font-size:1.42rem; margin:.2rem 0 .4rem; line-height:1.35; }
+header .lead { margin:0; color:var(--muted); font-size:.96rem; }
+.meta { color:var(--muted); font-size:.9rem; }
+article h2 {
+  font-size:1.12rem; margin-top:1.7rem; color:var(--accent);
+  border-bottom:1px dashed var(--line); padding-bottom:.25rem;
+}
+article h3 { font-size:1.02rem; margin-top:1.15rem; }
+ul, ol { padding-left:1.3rem; }
+.card {
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:1rem 1.15rem; margin:1rem 0;
+  box-shadow:0 1px 0 rgba(31,26,20,.04);
+}
+.callout {
+  border-left:4px solid var(--accent2); background:#fff7f0;
+  padding:.85rem 1rem; margin:1.1rem 0; border-radius:0 10px 10px 0;
+}
+.table-wrap { overflow-x:auto; margin:1rem 0; }
+table { width:100%; border-collapse:collapse; font-size:.95rem; background:var(--card); }
+th, td { border:1px solid var(--line); padding:.55rem .65rem; text-align:left; vertical-align:top; }
+th { background:var(--chip); color:var(--accent); }
+footer { border-top:2px solid var(--line); color:var(--muted); font-size:.9rem; margin-top:2rem; }
+nav ul { list-style:none; padding:0; }
+nav li {
+  margin:.6rem 0; padding:.85rem 1rem; background:var(--card);
+  border:1px solid var(--line); border-radius:10px;
+}
+.disclosure { font-size:.92rem; color:var(--muted); margin-top:1.5rem; }
+.links { margin:1.4rem 0; }
+</style>
+</head>
+<body>
+<header>
+<span class="brand">Boss Lab Studio · Netlify static guides</span>
+<h1>Arena 방어 세팅을 공격 빌드와 다르게 짜는 법</h1>
+<p class="lead meta">Android · 60+ parts · async Arena PvP · free with IAP · connection required</p>
+</header>
+<main>
+<article>
+
+<p><strong>한 줄 요약:</strong> Boss Lab Arena는 실시간 매칭이 아니라 <strong>비동기 PvP</strong>입니다. 보스를 게시하면 다른 플레이어의 보스가 당신의 일정과 무관하게 싸웁니다. 방어 세팅은 “지금 당장 조준”이 아니라 “게시용 빌드가 다양한 상대에게 버틸 수 있는가”를 묻는 일입니다.</p>
+
+<p class="disclosure">이 글은 개발사 Boss Lab Studio가 작성했습니다. 아트/오디오는 AI 지원, 디자인·코드·밸런싱은 팀이 담당합니다. Android 전용, 60+ 파츠, 연결 필요, 인앱 결제 있음. 레벨 에디터·UGC 도구 아님.</p>
+
+<h2>방어 사고방식: 공격 빌드와 무엇을 다르게 둘까</h2>
+<p>캠페인 공격용 빌드는 특정 보스 패턴을 뚫는 데 최적화됩니다. Arena 방어용 빌드는 <em>어떤 상대가 올지 모른다</em>는 전제에서 안정성을 우선합니다. 원거리만 잔뜩 얹거나 근접만 올인하면 상성 한 방에 무너지기 쉽습니다.</p>
+
+<div class="card">
+<h3>방어 체크리스트</h3>
+<ol>
+<li>무기 사거리 밴드가 한쪽으로만 몰리지 않았는가</li>
+<li>기동 파츠가 과중량으로 사실상 서 있지 않은가</li>
+<li>서포트(수리·실드 등) 주기가 초반 폭딜을 버틸 만큼 일찍 도는가</li>
+<li>AI 브레인 선택이 빌드 의도와 맞는가</li>
+</ol>
+</div>
+
+<h2>브레인별로 방어에 쓰기 쉬운 이유</h2>
+<ul>
+<li><strong>Hunter</strong> — 추격형. 상대가 거리를 벌리려 할 때 압박이 되지만, 위험 존에 스스로 들어가는 리플레이도 자주 보입니다.</li>
+<li><strong>Counterstrike</strong> — 반응/카운터형. 방어 게시물에서 “먼저 들이받지 않는” 안정감을 노릴 때 후보입니다.</li>
+<li><strong>Berserker</strong> — 피해를 받을수록 공격적. 막판 뒤집기에 강하지만, 초반 체력 관리가 나쁜 빌드와는 상극입니다.</li>
+</ul>
+
+<div class="callout">리플레이를 보세요. 방어 패배가 “딜 부족”인지 “사거리 불일치”인지 “브레인이 자살 각으로 돌진”인지부터 분리하면 파츠를 무작정 갈아끼우지 않게 됩니다.</div>
+
+<h2>정규화(normalization)를 의식한 게시</h2>
+<p>Arena에는 정규화 관련 가이드가 있습니다. 캠페인에서 과하게 키운 한 축만 믿고 게시하면, 기대와 다른 결과가 날 수 있습니다. 게시 전 <a href="https://www.bosslab.xyz/blog/arena-normalization?utm_source=netlify&amp;utm_campaign=sprint_ko-arena-defense">arena-normalization</a>과 <a href="https://www.bosslab.xyz/blog/arena-defense?utm_source=netlify&amp;utm_campaign=sprint_ko-arena-defense">arena-defense</a>를 함께 읽으세요.</p>
+
+<h2>짧은 세션 루틴</h2>
+<p>비동기라서 “방어 게시 → 다른 일 → 결과 확인 → 한두 파츠만 교체”가 가능합니다. 라이브 상대를 기다릴 필요가 없습니다. 다만 게임은 연결이 필요합니다. 완전 오프라인 플레이를 가정하지 마세요.</p>
+
+<h2>캠페인 빌드를 그대로 올리면?</h2>
+<p>가끔은 됩니다. 자주는 안 됩니다. 캠페인 100 보스 / 20 지구는 구간마다 요구가 바뀝니다. Arena 방어는 “평균적인 상대 풀”에 노출되므로, 특정 지구 트라이하드 빌드보다 범용 시너지가 유리한 경우가 많습니다. 시너지 사고는 <a href="https://www.bosslab.xyz/blog/synergy-guide?utm_source=netlify&amp;utm_campaign=sprint_ko-arena-defense">synergy-guide</a>를 참고하세요.</p>
+
+<ul>
+<li><a href="https://www.bosslab.xyz/blog/arena-guide?utm_source=netlify&amp;utm_campaign=sprint_ko-arena-defense">Arena 가이드</a></li>
+<li><a href="https://www.bosslab.xyz/blog/replay-guide?utm_source=netlify&amp;utm_campaign=sprint_ko-arena-defense">리플레이 가이드</a></li>
+</ul>
+
+<p>공식: <a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_ko-arena-defense">bosslab.xyz</a> · 플레이스토어: <a href="https://play.google.com/store/apps/details?id=com.bosslab.game&amp;utm_source=netlify&amp;utm_campaign=sprint_ko-arena-defense">Boss Lab: Robot Battle Builder</a></p>
+
+
+<h2>파츠 카테고리로 방어를 다시 보기</h2>
+<p>60+ 파츠는 바디·무기·기동·서포트로 나뉩니다. 방어 패배가 “딜 부족”으로만 보이면 무기를 올리기 쉽지만, 리플레이상 상대 사거리에서 얻어맞고 있다면 기동/바디를 먼저 손보세요. 초반 폭딜에 녹는다면 서포트 주기를 앞으로 당기는 편이 비용 대비 나을 때가 많습니다.</p>
+<p>관련 가이드: <a href="https://www.bosslab.xyz/blog/mobility-guide?utm_source=netlify&amp;utm_campaign=sprint_ko-arena-defense">mobility-guide</a>, <a href="https://www.bosslab.xyz/blog/counter-shields?utm_source=netlify&amp;utm_campaign=sprint_ko-arena-defense">counter-shields</a>, <a href="https://www.bosslab.xyz/blog/repair-drone-guide?utm_source=netlify&amp;utm_campaign=sprint_ko-arena-defense">repair-drone-guide</a>.</p>
+
+<h2>짧은 방어 실험 루프</h2>
+<p>비동기라서 라이브 상대를 기다릴 필요가 없습니다. 게시 → 결과 확인 → 브레인만 교체 → 재게시. 한 세션에 파츠 다섯 개를 동시에 바꾸면 무엇이 통했는지 모릅니다. 연결이 필요하며, 완전 오프라인 방어 운영은 가정하지 마세요. IAP가 있는 무료 게임이므로 체감은 Play 리뷰로 직접 확인하세요.</p>
+
+<p class="disclosure">개발자 공개: Boss Lab Studio. AI 지원 아트/오디오 · 팀 제작 디자인/코드/밸런싱. Android only · 60+ 파츠 · IAP · 연결 필요 · 레벨 에디터/UGC 아님.</p>
+
+<p class="links">
+<a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_ko-arena-defense">bosslab.xyz</a>
+·
+<a href="https://play.google.com/store/apps/details?id=com.bosslab.game&amp;utm_source=netlify&amp;utm_campaign=sprint_ko-arena-defense">Google Play — Boss Lab: Robot Battle Builder</a>
+</p>
+</article>
+</main>
+<footer>
+<p>© 2026 Boss Lab Studio · <a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_ko-arena-defense">Official site</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boss Labのよくある誤解と事実 — Android専用・60+パーツ・非同期Arena</title>
+<meta name="description" content="Boss Labの誤解を公式ファクトで整理。Androidのみ、60+パーツ、非同期Arena、接続必須。">
+<style>
+:root {
+  --bg:#f7f1e8; --card:#fffdf8; --text:#1f1a14; --muted:#6b5e4e;
+  --accent:#0d7a6f; --accent2:#c45c26; --line:#e2d6c4; --chip:#e8f4f2;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; font-family:"Noto Sans","Segoe UI",Roboto,system-ui,sans-serif;
+  background:
+    radial-gradient(ellipse at top left, #efe4d4 0%, transparent 55%),
+    linear-gradient(180deg, #f7f1e8 0%, #efe8dc 100%);
+  color:var(--text); line-height:1.75;
+}
+a { color:var(--accent); text-decoration-thickness:1px; }
+a:hover { color:var(--accent2); }
+header, main, footer { max-width:740px; margin:0 auto; padding:1.35rem 1.15rem; }
+header {
+  border-bottom:2px solid var(--line);
+  background:linear-gradient(90deg, rgba(13,122,111,.08), transparent);
+  border-radius:0 0 14px 14px;
+}
+header .brand {
+  display:inline-block; font-size:.78rem; letter-spacing:.04em; text-transform:uppercase;
+  background:var(--chip); color:var(--accent); padding:.2rem .55rem; border-radius:999px; margin-bottom:.55rem;
+}
+header h1 { font-size:1.42rem; margin:.2rem 0 .4rem; line-height:1.35; }
+header .lead { margin:0; color:var(--muted); font-size:.96rem; }
+.meta { color:var(--muted); font-size:.9rem; }
+article h2 {
+  font-size:1.12rem; margin-top:1.7rem; color:var(--accent);
+  border-bottom:1px dashed var(--line); padding-bottom:.25rem;
+}
+article h3 { font-size:1.02rem; margin-top:1.15rem; }
+ul, ol { padding-left:1.3rem; }
+.card {
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:1rem 1.15rem; margin:1rem 0;
+  box-shadow:0 1px 0 rgba(31,26,20,.04);
+}
+.callout {
+  border-left:4px solid var(--accent2); background:#fff7f0;
+  padding:.85rem 1rem; margin:1.1rem 0; border-radius:0 10px 10px 0;
+}
+.table-wrap { overflow-x:auto; margin:1rem 0; }
+table { width:100%; border-collapse:collapse; font-size:.95rem; background:var(--card); }
+th, td { border:1px solid var(--line); padding:.55rem .65rem; text-align:left; vertical-align:top; }
+th { background:var(--chip); color:var(--accent); }
+footer { border-top:2px solid var(--line); color:var(--muted); font-size:.9rem; margin-top:2rem; }
+nav ul { list-style:none; padding:0; }
+nav li {
+  margin:.6rem 0; padding:.85rem 1rem; background:var(--card);
+  border:1px solid var(--line); border-radius:10px;
+}
+.disclosure { font-size:.92rem; color:var(--muted); margin-top:1.5rem; }
+.links { margin:1.4rem 0; }
+</style>
+</head>
+<body>
+<header>
+<span class="brand">Boss Lab Studio · Netlify static guides</span>
+<h1>Boss Lab：よくある誤解と事実チェック</h1>
+<p class="lead meta">Android · 60+ parts · async Arena PvP · free with IAP · connection required</p>
+</header>
+<main>
+<article>
+
+<p><strong>答えを先に:</strong> <em>Boss Lab: Robot Battle Builder</em> は Boss Lab Studio が作った 2026 年の Android 専用オートバトラーです。60+（60以上）のパーツでボスを組み立て、Hunter / Counterstrike / Berserker のどれかの AI ブレインを付け、横視点の自動戦闘を見守ります。キャンペーンは 20 地区・100 ボス、Arena は非同期 PvP。無料（アプリ内課金あり）、接続が必要、レベルエディタでも UGC ツールでもありません。</p>
+
+<p class="disclosure">本記事は開発者 Boss Lab Studio が執筆しています。アート／オーディオは AI 支援、ゲームデザイン・コード・バランスはチームが担当しています。</p>
+
+<div class="callout">よく検索される「誤解」を先に潰し、公式ファクトだけを残します。他社ゲームの未検証な数値や仕様には触れません。</div>
+
+<h2>誤解1: リアルタイムで自分で操作するシューター</h2>
+<p>違います。戦闘中は手動操作しません。強さは「パーツ構成」と「AI ブレイン」にあります。War Robots や Mech Arena のようなリアルタイム操縦シューターとはジャンルが異なります。</p>
+
+<h2>誤解2: iPhone でも遊べる</h2>
+<p>いいえ。Boss Lab は Android（Google Play）のみです。iOS 版はありません。</p>
+
+<h2>誤解3: オフライン専用／オフラインでも全部遊べる</h2>
+<p>接続が必要です。「オフラインだけで完結する」と書いてある記事は誤りです。特に Arena の公開・結果同期にはネットワークが前提です。</p>
+
+<h2>誤解4: レベルエディタ／UGC でマップを作れる</h2>
+<p>違います。作れるのはロボットボスです。レベルエディタでもユーザー生成コンテンツ用の制作ツールでもありません。</p>
+
+<h2>誤解5: AI ブレイン＝生成 AI が戦術を書く</h2>
+<p>ここでの「AI ブレイン」は行動プリセットです。Hunter（追撃）、Counterstrike（反応／カウンター）、Berserker（ダメージを受けるほど攻撃的）。生成モデルが戦闘中に文章を書く仕組みではありません。</p>
+
+<div class="card">
+<h2>事実チェック表</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>項目</th><th>事実</th></tr></thead>
+<tbody>
+<tr><td>プラットフォーム</td><td>Android のみ</td></tr>
+<tr><td>パーツ数</td><td>60+（執筆時点 63）</td></tr>
+<tr><td>ブレイン</td><td>Hunter / Counterstrike / Berserker</td></tr>
+<tr><td>キャンペーン</td><td>100 ボス・20 地区</td></tr>
+<tr><td>PvP</td><td>非同期 Arena（公開ボス同士）</td></tr>
+<tr><td>価格</td><td>無料＋アプリ内課金</td></tr>
+<tr><td>エンジン</td><td>Phaser</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<h2>誤解6: 「課金しないと進まない」と断定できる</h2>
+<p>無料でダウンロードでき、進行の軸はビルド選択とブレインです。課金の感じ方は人によって違うので、最新の Play レビューを自分で確認してください。私たちは「完全無課金で一切差がない」などの未検証な断言はしません。</p>
+
+<h2>誤解7: Arena は相手を待って同時対戦する</h2>
+<p>Arena は非同期です。ボスを公開すると、他プレイヤーのボスがあなたの都合とは別に戦います。マッチング待ちのライブ対戦ではありません。短いセッション向きです。</p>
+
+<h2>次に読む公式ガイド</h2>
+<ul>
+<li><a href="https://www.bosslab.xyz/blog/beginners-guide?utm_source=netlify&amp;utm_campaign=sprint_ja-myths-vs-facts">初心者ガイド</a></li>
+<li><a href="https://www.bosslab.xyz/blog/brain-presets?utm_source=netlify&amp;utm_campaign=sprint_ja-myths-vs-facts">ブレインプリセット</a></li>
+<li><a href="https://www.bosslab.xyz/blog/arena-guide?utm_source=netlify&amp;utm_campaign=sprint_ja-myths-vs-facts">Arena ガイド</a></li>
+</ul>
+
+<p>公式サイト: <a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_ja-myths-vs-facts">https://www.bosslab.xyz/</a> · Google Play: <a href="https://play.google.com/store/apps/details?id=com.bosslab.game&amp;utm_source=netlify&amp;utm_campaign=sprint_ja-myths-vs-facts">Boss Lab: Robot Battle Builder</a></p>
+
+
+<h2>誤解8: パーツは「多ければ強い」</h2>
+<p>60+（60以上）のパーツは選択肢の広さです。スロットを埋めるほど強いわけではありません。重量と機動、射程バンド、サポート周期の整合が崩れると、見た目豪華なのにリプレイでは何も当たっていない、ということが起きます。カテゴリ別の読み方は <a href="https://www.bosslab.xyz/blog/weight-and-mobility?utm_source=netlify&amp;utm_campaign=sprint_ja-myths-vs-facts">weight-and-mobility</a> と <a href="https://www.bosslab.xyz/blog/synergy-guide?utm_source=netlify&amp;utm_campaign=sprint_ja-myths-vs-facts">synergy-guide</a> を参照してください。</p>
+
+<h2>キャンペーンと Arena を同じビルドで語らない</h2>
+<p>100 ボス／20 地区の攻略特化と、非同期 Arena の防衛掲示は目的が違います。「あのボスに勝ったから強い」は防衛では通用しないことがあります。<a href="https://www.bosslab.xyz/blog/campaign-vs-arena?utm_source=netlify&amp;utm_campaign=sprint_ja-myths-vs-facts">campaign-vs-arena</a> で切り分けてください。</p>
+
+<p class="disclosure">開発者開示: Boss Lab Studio。アート／オーディオは AI 支援、デザイン・コード・バランスはチーム制作。</p>
+
+<p class="links">
+<a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_ja-myths-vs-facts">bosslab.xyz</a>
+·
+<a href="https://play.google.com/store/apps/details?id=com.bosslab.game&amp;utm_source=netlify&amp;utm_campaign=sprint_ja-myths-vs-facts">Google Play — Boss Lab: Robot Battle Builder</a>
+</p>
+</article>
+</main>
+<footer>
+<p>© 2026 Boss Lab Studio · <a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_ja-myths-vs-facts">Official site</a></p>
+</footer>
+</body>
+</html>

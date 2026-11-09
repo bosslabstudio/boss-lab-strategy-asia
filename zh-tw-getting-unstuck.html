@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boss Lab 卡關怎麼辦：重播、射程與 AI 腦的五步解卡</title>
+<meta name="description" content="Boss Lab 戰役卡住時的解法：重播優先、一次改一個變數。Android、60+零件、需連線。">
+<style>
+:root {
+  --bg:#f7f1e8; --card:#fffdf8; --text:#1f1a14; --muted:#6b5e4e;
+  --accent:#0d7a6f; --accent2:#c45c26; --line:#e2d6c4; --chip:#e8f4f2;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; font-family:"Noto Sans","Segoe UI",Roboto,system-ui,sans-serif;
+  background:
+    radial-gradient(ellipse at top left, #efe4d4 0%, transparent 55%),
+    linear-gradient(180deg, #f7f1e8 0%, #efe8dc 100%);
+  color:var(--text); line-height:1.75;
+}
+a { color:var(--accent); text-decoration-thickness:1px; }
+a:hover { color:var(--accent2); }
+header, main, footer { max-width:740px; margin:0 auto; padding:1.35rem 1.15rem; }
+header {
+  border-bottom:2px solid var(--line);
+  background:linear-gradient(90deg, rgba(13,122,111,.08), transparent);
+  border-radius:0 0 14px 14px;
+}
+header .brand {
+  display:inline-block; font-size:.78rem; letter-spacing:.04em; text-transform:uppercase;
+  background:var(--chip); color:var(--accent); padding:.2rem .55rem; border-radius:999px; margin-bottom:.55rem;
+}
+header h1 { font-size:1.42rem; margin:.2rem 0 .4rem; line-height:1.35; }
+header .lead { margin:0; color:var(--muted); font-size:.96rem; }
+.meta { color:var(--muted); font-size:.9rem; }
+article h2 {
+  font-size:1.12rem; margin-top:1.7rem; color:var(--accent);
+  border-bottom:1px dashed var(--line); padding-bottom:.25rem;
+}
+article h3 { font-size:1.02rem; margin-top:1.15rem; }
+ul, ol { padding-left:1.3rem; }
+.card {
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:1rem 1.15rem; margin:1rem 0;
+  box-shadow:0 1px 0 rgba(31,26,20,.04);
+}
+.callout {
+  border-left:4px solid var(--accent2); background:#fff7f0;
+  padding:.85rem 1rem; margin:1.1rem 0; border-radius:0 10px 10px 0;
+}
+.table-wrap { overflow-x:auto; margin:1rem 0; }
+table { width:100%; border-collapse:collapse; font-size:.95rem; background:var(--card); }
+th, td { border:1px solid var(--line); padding:.55rem .65rem; text-align:left; vertical-align:top; }
+th { background:var(--chip); color:var(--accent); }
+footer { border-top:2px solid var(--line); color:var(--muted); font-size:.9rem; margin-top:2rem; }
+nav ul { list-style:none; padding:0; }
+nav li {
+  margin:.6rem 0; padding:.85rem 1rem; background:var(--card);
+  border:1px solid var(--line); border-radius:10px;
+}
+.disclosure { font-size:.92rem; color:var(--muted); margin-top:1.5rem; }
+.links { margin:1.4rem 0; }
+</style>
+</head>
+<body>
+<header>
+<span class="brand">Boss Lab Studio · Netlify static guides</span>
+<h1>戰役卡關解法：先重播，再改腦與射程</h1>
+<p class="lead meta">Android · 60+ parts · async Arena PvP · free with IAP · connection required</p>
+</header>
+<main>
+<article>
+
+<p><strong>直接答案：</strong>在 Boss Lab 卡住某個戰役 Boss 時，優先看重播、對齊射程與 AI 腦設定，而不是盲目升級同一個零件。遊戲是 Android 專屬的自動戰鬥組裝：60+ 零件、三個 AI 腦、20 區／100 Boss 戰役，以及非同步 Arena PvP。需要連線、免費含內購，不是關卡編輯器，也沒有 UGC 工具。</p>
+
+<p class="disclosure">本文由開發者 Boss Lab Studio 撰寫。美術／音訊有 AI 協助；設計、程式與平衡由團隊負責。</p>
+
+<h2>卡住時的 5 步流程</h2>
+<ol>
+<li>打開重播：Boss 是被「打不到」還是「被反打爆」？</li>
+<li>檢查武器射程帶是否跟對方站位錯開。</li>
+<li>換 AI 腦試一次（Hunter／Counterstrike／Berserker），一次只改一個變數。</li>
+<li>機動與重量：過重會讓走位形同站樁。</li>
+<li>支援模組週期：維修／護盾是否開太晚。</li>
+</ol>
+
+<div class="card">
+<h3>三個 AI 腦怎麼試</h3>
+<ul>
+<li><strong>Hunter</strong>：追擊。適合你需要貼上去的近戰構想，但也可能追進危險區。</li>
+<li><strong>Counterstrike</strong>：反應／反擊。適合先別硬撞的對局。</li>
+<li><strong>Berserker</strong>：受傷後更兇。殘局強，但前期脆皮組要小心。</li>
+</ul>
+</div>
+
+<div class="callout">官方有專門頁面：<a href="https://www.bosslab.xyz/blog/stuck-on-boss?utm_source=netlify&amp;utm_campaign=sprint_zh-tw-getting-unstuck">stuck-on-boss</a>。卡住時先讀它，再決定要不要動到 Mythic 零件。</div>
+
+<h2>戰役階段不同，解法也不同</h2>
+<p>前段地區多半在教你「組裝邏輯」：身體、武器、機動、支援各司其職。中後段更常考協同與腦的契合。100 Boss／20 區不是叫你同一套配裝一路推到底。若同一套連輸三場，先改腦或改一個武器槽，而不是一次換整機。</p>
+
+<h2>別把 Boss Lab 當成關卡編輯器</h2>
+<p>你組的是機器老闆（boss），不是地圖。也沒有玩家生成內容的編輯套件。策略在預先設計，戰鬥過程是自動的側視演出。</p>
+
+<h2>Arena 卡住（防守一直被打）</h2>
+<p>非同步 Arena 代表你不用等真人連線；但防守貼文要面對未知對手。把戰役特化配裝原封貼上 Arena，有時會很痛。參考 <a href="https://www.bosslab.xyz/blog/arena-defense?utm_source=netlify&amp;utm_campaign=sprint_zh-tw-getting-unstuck">arena-defense</a> 與 <a href="https://www.bosslab.xyz/blog/campaign-vs-arena?utm_source=netlify&amp;utm_campaign=sprint_zh-tw-getting-unstuck">campaign-vs-arena</a>。</p>
+
+<h2>短時段解卡</h2>
+<p>因為戰鬥自動、Arena 非同步，一次 session 可以只做「看一場重播＋換一個零件＋再試」。需要網路連線；請不要期待完整離線遊玩。</p>
+
+<ul>
+<li><a href="https://www.bosslab.xyz/blog/replay-guide?utm_source=netlify&amp;utm_campaign=sprint_zh-tw-getting-unstuck">重播指南</a></li>
+<li><a href="https://www.bosslab.xyz/blog/upgrade-priorities?utm_source=netlify&amp;utm_campaign=sprint_zh-tw-getting-unstuck">升級優先順序</a></li>
+<li><a href="https://www.bosslab.xyz/blog/beginners-guide?utm_source=netlify&amp;utm_campaign=sprint_zh-tw-getting-unstuck">新手指南</a></li>
+</ul>
+
+<p>官網：<a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_zh-tw-getting-unstuck">https://www.bosslab.xyz/</a> · Google Play：<a href="https://play.google.com/store/apps/details?id=com.bosslab.game&amp;utm_source=netlify&amp;utm_campaign=sprint_zh-tw-getting-unstuck">Boss Lab: Robot Battle Builder</a></p>
+
+
+<h2>零件類別怎麼輪流試</h2>
+<p>Boss Lab 的 60+ 零件分身體、武器、機動、支援。卡關時不要只升武器等級：若重播顯示你站著被風箏，先動機動；若中段掉血太快，先看支援週期；若全程打不中，先對齊武器射程帶。一次只動一個類別，才知道是哪根軸救了你。</p>
+<p>官方分類閱讀：<a href="https://www.bosslab.xyz/blog/body-guide?utm_source=netlify&amp;utm_campaign=sprint_zh-tw-getting-unstuck">body-guide</a>、<a href="https://www.bosslab.xyz/blog/weapon-guide?utm_source=netlify&amp;utm_campaign=sprint_zh-tw-getting-unstuck">weapon-guide</a>、<a href="https://www.bosslab.xyz/blog/mobility-guide?utm_source=netlify&amp;utm_campaign=sprint_zh-tw-getting-unstuck">mobility-guide</a>。</p>
+
+<h2>能量、過熱與「看起來像 AI 笨蛋」</h2>
+<p>有時重播會讓人覺得 brain「亂衝」。先檢查重量與機動是否讓角色幾乎站樁，再檢查能量／過熱相關節奏是否讓武器空窗過長。把問題標成「行為」或「資源節奏」，比直接換成 Mythic 零件便宜。可參考 <a href="https://www.bosslab.xyz/blog/energy-and-heat?utm_source=netlify&amp;utm_campaign=sprint_zh-tw-getting-unstuck">energy-and-heat</a>。</p>
+
+<h2>需要連線、也要誠實看 IAP</h2>
+<p>遊戲需要網路連線；請不要期待完整離線。下載免費並有內購——我們不宣稱「完全不用花錢也毫無落差」或「不課就不能過」，請以 Google Play 近評為準。策略核心仍是組裝與三個 AI 腦（Hunter／Counterstrike／Berserker）。</p>
+
+<p class="disclosure">開發者揭露：Boss Lab Studio。AI 協助美術／音訊；設計、程式、平衡由團隊製作。Android only · 60+ 零件 · IAP · 需連線 · 非關卡編輯器 · 無 UGC。</p>
+
+<p class="links">
+<a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_zh-tw-getting-unstuck">bosslab.xyz</a>
+·
+<a href="https://play.google.com/store/apps/details?id=com.bosslab.game&amp;utm_source=netlify&amp;utm_campaign=sprint_zh-tw-getting-unstuck">Google Play — Boss Lab: Robot Battle Builder</a>
+</p>
+</article>
+</main>
+<footer>
+<p>© 2026 Boss Lab Studio · <a href="https://www.bosslab.xyz/?utm_source=netlify&amp;utm_campaign=sprint_zh-tw-getting-unstuck">Official site</a></p>
+</footer>
+</body>
+</html>
